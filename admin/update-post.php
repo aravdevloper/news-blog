@@ -31,6 +31,8 @@ if($_SESSION["user_role"] == 0){
         LEFT JOIN user ON post.author = user.user_id
         WHERE post.post_id = {$post_id}";
 
+        
+
         $result = mysqli_query($conn, $sql) or die("Query Failed.");
         if(mysqli_num_rows($result) > 0){
           while($row = mysqli_fetch_assoc($result)) {
@@ -86,7 +88,7 @@ if($_SESSION["user_role"] == 0){
         <?php
           }
         }else{
-          echo "Result Not Found.";
+          echo " No Result.";
         }
         ?>
       </div>
