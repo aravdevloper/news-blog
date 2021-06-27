@@ -88,7 +88,7 @@ if($_SESSION["user_role"] == 0){
         <?php
           }
         }else{
-          echo " No Result.";
+          echo " No no Result.";
         }
         ?>
       </div>
